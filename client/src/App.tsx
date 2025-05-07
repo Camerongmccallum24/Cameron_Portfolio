@@ -21,7 +21,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Terms from "@/pages/Terms";
 import CookiePolicy from "@/pages/CookiePolicy";
 import DemoApp from "@/demo/DemoApp";
-import CustomerHealthDashboard from "./demo/Customer_Health_Dashboard";
+import CustomerHealthDashboard from "@/demo/Customer_Health_Dashboard";
 
 
 function App() {

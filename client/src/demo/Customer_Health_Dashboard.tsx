@@ -290,7 +290,7 @@ const CustomerHealthDashboard = () => {
                         <h3 className="text-xl font-medium">Usage Analytics</h3>
                         <div className="flex items-center gap-2">
                             <span className="text-sm font-medium text-muted-foreground">Filter by:</span>
-                            <select className="border border-border rounded-md bg-muted py-1 px-3 text-sm text-popover-foreground">
+                            <select aria-label="Filter features by type" className="border border-border rounded-md bg-muted py-1 px-3 text-sm text-popover-foreground">
                                 <option value="all">All Features</option>
                                 <option value="core">Core Features</option>
                                 <option value="advanced">Advanced Features</option>
