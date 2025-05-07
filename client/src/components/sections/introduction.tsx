@@ -1,6 +1,5 @@
-
 import { FileDown, Linkedin } from 'lucide-react';
-import { Button } from '../shared/Button';
+import { Button } from '../ui/button';
 
 export const Introduction = () => {
   const handleDownloadResume = () => {
@@ -11,43 +10,38 @@ export const Introduction = () => {
     <div className="space-y-8">
       <div className="prose prose-invert max-w-none">
         <p className="text-gray-300 text-lg leading-relaxed">
-          With over a decade of experience in Customer Success and AI development, 
-          I specialize in bridging technology and business needs to drive client 
+          With over a decade of experience in Customer Success and AI development,
+          I specialize in bridging technology and business needs to drive client
           retention and satisfaction.
         </p>
         <p className="text-gray-300 text-lg leading-relaxed">
-          My unique blend of technical expertise and business acumen allows me to 
+          My unique blend of technical expertise and business acumen allows me to
           develop AI-driven solutions that deliver measurable results for organizations.
         </p>
         <p className="text-gray-300 text-lg leading-relaxed">
-          I'm passionate about leveraging emerging technologies to solve complex business 
+          I'm passionate about leveraging emerging technologies to solve complex business
           challenges and create impactful solutions that drive growth and innovation.
         </p>
       </div>
 
       <div className="flex flex-wrap gap-4">
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           size="lg"
           onClick={handleDownloadResume}
         >
           <FileDown className="w-4 h-4 mr-2" />
-          My CV 
+          My CV
         </Button>
         <a
           href="https://linkedin.com/in/cameron-g-mccallum"
           target="_blank"
           rel="noopener noreferrer"
-          className="group p-3 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900"
+          className="group p-3 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 linkedin-link"
           aria-label="LinkedIn"
-          style={{
-            background: '#0077B515',
-            boxShadow: '0 0 12px #0077B566'
-          }}
         >
-          <Linkedin 
-            className="w-5 h-5 transition-transform group-hover:scale-110" 
-            style={{ color: '#0077B5' }}
+          <Linkedin
+            className="w-5 h-5 transition-transform group-hover:scale-110 linkedin-icon"
           />
         </a>
       </div>
