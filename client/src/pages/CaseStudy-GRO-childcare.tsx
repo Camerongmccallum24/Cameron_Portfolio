@@ -14,7 +14,6 @@ export default function CaseStudyGRO() {
         <span className="badge">Childcare</span>{" "}
         <span className="badge">Migration Pathways</span>{" "}
         <span className="badge">DAMA</span>{" "}
-        <span className="badge">Australia</span>
       </div>
 
       <h2>Project Overview</h2>
