@@ -22,6 +22,8 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Terms from "@/pages/Terms";
 import CookiePolicy from "@/pages/CookiePolicy";
 import DemoApp from "@/demo/DemoApp";
+import CustomerHealthDashboard from "@/demo/Customer_Health_Dashboard";
+
 
 function App() {
   const [location] = useLocation();
@@ -54,6 +56,7 @@ function App() {
           <Route path="/cookie-policy" component={CookiePolicy} />
           <Route path="/DemoApp" component={DemoApp} />
           <Route path="/case-study/gro" component={CaseStudyGRO} />
+          <Route path="/customer-health-dashboard" component={CustomerHealthDashboard} />
         </Switch>
       </AnimatePresence>
       <Footer />

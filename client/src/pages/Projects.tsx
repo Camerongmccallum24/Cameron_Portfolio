@@ -23,6 +23,45 @@ export default function Projects() {
 
   const projects = [
     {
+  title: "GRO - Gateway Regional Childcare Opportunities ",
+  description: "A digital platform bridging Australia’s regional childcare gaps through skilled migration and smart technology. GRO connects international early childhood educators with rural providers, streamlining DAMA visa sponsorship and smart matching.",
+  image: "/public/images/GRO.jpeg", // Make sure this image exists in your public/images folder
+  tags: ["Next.js", "TypeScript", "Firebase", "Airtable", "Childcare", "Migration Pathways", "DAMA", "Australia"],
+  links: {
+    demo: "#", // Insert your actual demo URL if available
+    github: "#" // Insert your actual repo URL if available
+  },
+  preview: {
+    impact: "↑150% applications, ↓65% waitlists",
+    features: [
+      "Community Hub",
+      "Visa & Sponsorship Toolkit",
+      "Smart Matching",
+      "Council Partnership Mode"
+    ],
+    status: "Live / Actively Partnering"
+  }
+},{
+  title: "GRO: Gateway Regional Opportunities",
+  description: "A digital platform bridging Australia’s regional childcare gaps through skilled migration and smart technology. GRO connects international early childhood educators with rural providers, streamlining DAMA visa sponsorship and smart matching.",
+  image: "/images/gro-casestudy.jpg", // Make sure this image exists in your public/images folder
+  tags: ["Next.js", "TypeScript", "Firebase", "Airtable", "Childcare", "Migration Pathways", "DAMA", "Australia"],
+  links: {
+    demo: "#", // Insert your actual demo URL if available
+    github: "#" // Insert your actual repo URL if available
+  },
+  preview: {
+    impact: "↑150% applications, ↓65% waitlists",
+    features: [
+      "Community Hub",
+      "Visa & Sponsorship Toolkit",
+      "Smart Matching",
+      "Council Partnership Mode"
+    ],
+    status: "Live / Actively Partnering"
+  }
+},
+    {
       title: "AI Tools Directory",
       description: "A comprehensive directory platform for discovering and comparing AI-powered Customer Success tools. Features include advanced search, detailed comparisons, and verified reviews to help CS teams make informed decisions about their tech stack.",
       image: "/images/ai-tools-directory.jpg",

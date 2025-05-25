@@ -16,6 +16,15 @@ export default defineConfig({
     },
   },
   root: path.resolve(__dirname, "client"),
+  server: { // Added for Vite CLI dev server
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000', // Your Express server
+        changeOrigin: true,
+        secure: false, // If your backend is http
+      }
+    }
+  },
   build: {
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,

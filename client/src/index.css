@@ -326,4 +326,14 @@
   .newsletter-cta input:focus {
     outline: 2px solid #06b6d4;
   }
+
+  /* LinkedIn Link and Icon Styles */
+  .linkedin-link {
+    background: #0077B515;
+    box-shadow: 0 0 12px #0077B566;
+  }
+
+  .linkedin-icon {
+    color: #0077B5;
+  }
 }
