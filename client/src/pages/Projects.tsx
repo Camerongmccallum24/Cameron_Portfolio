@@ -23,9 +23,9 @@ export default function Projects() {
 
   const projects = [
     {
-  title: "GRO: Gateway Regional Opportunities",
+  title: "GRO - Gateway Regional Childcare Opportunities ",
   description: "A digital platform bridging Australia’s regional childcare gaps through skilled migration and smart technology. GRO connects international early childhood educators with rural providers, streamlining DAMA visa sponsorship and smart matching.",
-  image: "/images/gro-casestudy.jpg", // Make sure this image exists in your public/images folder
+  image: "/public/images/GRO.jpeg", // Make sure this image exists in your public/images folder
   tags: ["Next.js", "TypeScript", "Firebase", "Airtable", "Childcare", "Migration Pathways", "DAMA", "Australia"],
   links: {
     demo: "#", // Insert your actual demo URL if available
