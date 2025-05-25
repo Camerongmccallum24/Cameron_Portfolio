@@ -10,7 +10,8 @@
     "start": "NODE_ENV=production node dist/index.js",
     "replit": "npm run build && npm start",
     "check": "tsc",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "install": "npm install"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
