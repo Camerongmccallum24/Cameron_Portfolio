@@ -16,6 +16,7 @@ import CaseStudyPortal from "@/pages/CaseStudyPortal";
 import CaseStudyAutomator from "@/pages/CaseStudyAutomator";
 import CSMDemo from "@/components/csm-demo";
 import CaseStudyAITools from "@/pages/CaseStudyAITools";
+import CaseStudyGRO from "@/pages/CaseStudyGRO";
 import { AnimatePresence } from "framer-motion";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Terms from "@/pages/Terms";
@@ -52,6 +53,7 @@ function App() {
           <Route path="/terms" component={Terms} />
           <Route path="/cookie-policy" component={CookiePolicy} />
           <Route path="/DemoApp" component={DemoApp} />
+          <Route path="/case-study/gro" component={CaseStudyGRO} />
         </Switch>
       </AnimatePresence>
       <Footer />
