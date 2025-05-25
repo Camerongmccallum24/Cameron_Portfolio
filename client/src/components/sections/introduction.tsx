@@ -1,6 +1,5 @@
-
 import { FileDown, Linkedin } from 'lucide-react';
-import { Button } from '../shared/Button';
+import { Button } from '../ui/button';
 
 export const Introduction = () => {
   const handleDownloadResume = () => {

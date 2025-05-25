@@ -54,6 +54,28 @@ npm run dev
     └── index.ts         # Database connection
 ```
 
+## Interactive Demos
+
+### CSM Demo's
+A showcase of Customer Success Management tools, featuring three embedded applications:
+
+- **Shared Success Space**  
+  URL: https://shared-success-space.lovable.app/
+- **Customer Success Galaxy**  
+  URL: https://customer-success-galaxy.lovable.app
+- **Third Demo App**  
+  URL: https://third-demo-app.example.com
+
+These demos are accessible via the `CSMDemo` component and are presented in a simulated computer frame UI.
+
+### AI-Powered Presentation Builder
+Implemented in `DemoApp.tsx`, this interactive demo allows Customer Success Managers to:
+- Upload datasets and visualize insights dynamically
+- Generate AI-driven stories from raw data
+- Interact with live data visualizations and adjust parameters in real time
+
+Both demos are located in the `client/src/components/csm-demo/CSMDemo.tsx` and `client/src/demo/DemoApp.tsx` files, respectively.
+
 ## Available Scripts
 - `npm run dev`: Start development server
 - `npm run build`: Build for production
