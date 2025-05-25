@@ -67,7 +67,7 @@ export default function Projects() {
       image: "/images/ai-tools-directory.jpg",
       tags: ["React", "TypeScript", "Tailwind CSS", "Customer Success"],
       links: {
-        demo: "client/src/pages/CaseStudyAutomator.tsx",
+        demo: "/case-study/ai-tools-directory", // fixed to be a route, not a file path
         github: "https://github.com/camerongmccallum24/AIToolsDirectory"
       },
       preview: {
@@ -94,7 +94,7 @@ export default function Projects() {
     {
       title: "Customer Success Portal",
       description: "A centralized platform for Customer Success Managers to manage client-specific knowledge bases, automate insights, and streamline workflows. Includes features for sentiment analysis, onboarding optimization, and multi-stakeholder collaboration.",
-      image: "/images/customer-succes-portal.jpg",
+      image: "/images/customer-success-portal.jpg", // fixed typo in image path
       tags: ["FastAPI", "Python", "Docker", "Replit", "Customer Success"],
       links: {
         demo: "https://customer-success-portfolio.camerongmccallum.repl.co/case-study/customer-success-portal",
@@ -112,7 +112,7 @@ export default function Projects() {
       image: "/images/customer-success-automator.jpeg",
       tags: ["Python", "Automation", "API Integrations", "AI"],
       links: {
-        demo: "URL-to-customer-success-automator-demo",
+        demo: "#", // placeholder if no demo URL available
         github: "https://github.com/camerongmccallum24"
       },
       preview: {
@@ -210,7 +210,7 @@ export default function Projects() {
                       <CardHeader className="relative aspect-video overflow-hidden p-0">
                         <motion.img 
                           src={project.image}
-                          alt={project.title}
+                          alt={project.title || "Project image"}
                           className="absolute inset-0 w-full h-full object-cover"
                           initial={{ scale: 1.2 }}
                           animate={{ scale: 1 }}
@@ -222,7 +222,11 @@ export default function Projects() {
                           <ShareButtons
                             title={project.title}
                             description={project.description}
-                            url={`${window.location.origin}/case-study/${project.title.toLowerCase().replace(/\s+/g, '-')}`}
+                            url={`${
+                              typeof window !== "undefined"
+                                ? window.location.origin
+                                : ""
+                            }/case-study/${project.title.toLowerCase().replace(/\s+/g, '-')}`}
                           />
                           <TooltipProvider>
                             <Tooltip>

@@ -4,6 +4,7 @@ import { marked } from 'marked';
 import { Chart } from 'chart.js/auto';
 import DOMPurify from 'dompurify';
 import './CSMDemo.css';
+import { motion } from 'framer-motion';
 
 const CSMDemo: React.FC = () => {
     const [activeTab, setActiveTab] = useState('health');
